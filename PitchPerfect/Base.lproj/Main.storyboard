@@ -17,24 +17,27 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lfQ-kW-7LW">
-                                <rect key="frame" x="157" y="421" width="79" height="35"/>
-                                <color key="backgroundColor" red="0.12136395045820636" green="1" blue="0.047073037681704122" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <rect key="frame" x="107" y="354" width="179" height="169"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Record"/>
+                                <buttonConfiguration key="configuration" style="plain" image="RecordButton"/>
                                 <connections>
                                     <action selector="recordAudio:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eLm-B2-Oe9"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to record" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mgy-7R-uhM">
-                                <rect key="frame" x="146" y="464" width="101" height="21"/>
+                                <rect key="frame" x="146" y="531" width="101" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hVD-pI-pdD">
-                                <rect key="frame" x="125.66666666666669" y="509" width="142" height="35"/>
+                                <rect key="frame" x="107" y="576" width="179" height="169"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" priority="1" constant="64" id="1yg-nm-zgB"/>
+                                    <constraint firstAttribute="width" priority="1" constant="64" id="ASf-Fn-D8x"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Stop Recording"/>
+                                <buttonConfiguration key="configuration" style="plain" image="Stop"/>
                                 <connections>
                                     <action selector="stopRecording:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Z1O-0d-pyb"/>
                                 </connections>
@@ -52,7 +55,9 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="recordingLabel" destination="Mgy-7R-uhM" id="17p-Ih-4FB"/>
+                        <outlet property="recordButton" destination="lfQ-kW-7LW" id="2xh-34-LDU"/>
+                        <outlet property="recordingLabel" destination="Mgy-7R-uhM" id="vid-oQ-azu"/>
+                        <outlet property="stopRecordingButton" destination="hVD-pI-pdD" id="KPM-SH-FLR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -61,6 +66,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="RecordButton" width="155" height="155"/>
+        <image name="Stop" width="155" height="155"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
