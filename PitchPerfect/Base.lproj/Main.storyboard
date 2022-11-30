@@ -31,10 +31,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hVD-pI-pdD">
-                                <rect key="frame" x="164.66666666666666" y="598" width="64" height="64"/>
+                                <rect key="frame" x="107" y="598" width="179" height="169"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="64" id="NN8-JN-U6C"/>
-                                    <constraint firstAttribute="height" constant="64" id="Zfe-So-x9a"/>
+                                    <constraint firstAttribute="width" priority="1" constant="179" id="05d-Qz-K9u"/>
+                                    <constraint firstAttribute="height" priority="1" constant="169" id="P7A-qk-5zd"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="Stop"/>
@@ -49,8 +49,8 @@
                             <constraint firstItem="lfQ-kW-7LW" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="IcR-AP-krf"/>
                             <constraint firstItem="Mgy-7R-uhM" firstAttribute="top" secondItem="lfQ-kW-7LW" secondAttribute="bottom" constant="8" symbolic="YES" id="e9A-Id-GPg"/>
                             <constraint firstItem="lfQ-kW-7LW" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="ffb-Op-zGB"/>
+                            <constraint firstItem="hVD-pI-pdD" firstAttribute="top" secondItem="Mgy-7R-uhM" secondAttribute="bottom" constant="24" id="kwo-ZR-Atr"/>
                             <constraint firstItem="Mgy-7R-uhM" firstAttribute="centerX" secondItem="lfQ-kW-7LW" secondAttribute="centerX" id="tNk-zg-OqY"/>
-                            <constraint firstItem="hVD-pI-pdD" firstAttribute="top" secondItem="Mgy-7R-uhM" secondAttribute="bottom" constant="24" id="yvg-F4-hWM"/>
                             <constraint firstItem="hVD-pI-pdD" firstAttribute="centerX" secondItem="Mgy-7R-uhM" secondAttribute="centerX" id="zIh-id-oqe"/>
                         </constraints>
                     </view>
