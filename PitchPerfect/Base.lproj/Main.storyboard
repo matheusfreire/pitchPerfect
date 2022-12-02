@@ -17,27 +17,29 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lfQ-kW-7LW">
-                                <rect key="frame" x="107" y="376" width="179" height="169"/>
+                                <rect key="frame" x="134.66666666666666" y="403.66666666666669" width="123.99999999999997" height="114.00000000000006"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="RecordButton"/>
+                                <buttonConfiguration key="configuration" style="plain" image="record_100"/>
                                 <connections>
                                     <action selector="recordAudio:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eLm-B2-Oe9"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to record" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mgy-7R-uhM">
-                                <rect key="frame" x="146" y="553" width="101" height="21"/>
+                                <rect key="frame" x="146" y="525.66666666666663" width="101" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hVD-pI-pdD">
-                                <rect key="frame" x="107" y="598" width="179" height="169"/>
+                                <rect key="frame" x="164.66666666666666" y="570.66666666666663" width="64" height="64"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" priority="1" constant="179" id="05d-Qz-K9u"/>
-                                    <constraint firstAttribute="height" priority="1" constant="169" id="P7A-qk-5zd"/>
+                                    <constraint firstAttribute="width" constant="64" id="05d-Qz-K9u"/>
+                                    <constraint firstAttribute="height" constant="64" id="P7A-qk-5zd"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="Stop"/>
+                                <buttonConfiguration key="configuration" style="plain" image="stop_100" imagePadding="0.0">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" scale="small"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <action selector="stopRecording:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Z1O-0d-pyb"/>
                                 </connections>
@@ -161,12 +163,13 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mY4-aA-XLA" userLabel="Stop Button">
-                                <rect key="frame" x="107" y="738" width="179" height="64"/>
+                                <rect key="frame" x="164.66666666666666" y="738" width="64" height="64"/>
                                 <constraints>
+                                    <constraint firstAttribute="width" constant="64" id="g93-ww-wlK"/>
                                     <constraint firstAttribute="height" constant="64" id="uPK-Do-6hV"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="Stop"/>
+                                <buttonConfiguration key="configuration" style="plain" image="stop_100"/>
                                 <connections>
                                     <action selector="stopButtonPressed:" destination="pzO-Sw-uXP" eventType="touchUpInside" id="3ve-Q9-Dx4"/>
                                 </connections>
@@ -204,10 +207,10 @@
         <image name="Fast" width="90" height="90"/>
         <image name="HighPitch" width="90" height="90"/>
         <image name="LowPitch" width="90" height="90"/>
-        <image name="RecordButton" width="155" height="155"/>
         <image name="Reverb" width="90" height="90"/>
         <image name="Slow" width="90" height="90"/>
-        <image name="Stop" width="155" height="155"/>
+        <image name="record_100" width="100" height="100"/>
+        <image name="stop_100" width="100" height="100"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
