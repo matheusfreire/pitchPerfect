@@ -48,8 +48,8 @@ class PlaySoundsViewController: UIViewController {
         switch(ButtonType(rawValue: sender.tag)!){
         case .slow: playSound(rate: 0.5)
         case .fast: playSound(rate: 1.5)
-        case .chipmunk: playSound(rate: 1000)
-        case .vader: playSound(rate: -1000)
+        case .chipmunk: playSound(pitch: 1000)
+        case .vader: playSound(pitch: -1000)
         case .echo: playSound(echo: true)
         case .reverb: playSound(reverb: true)
         }
